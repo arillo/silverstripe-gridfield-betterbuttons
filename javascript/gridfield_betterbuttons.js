@@ -17,14 +17,5 @@ $.entwine('ss', function($) {
 			dialog.ssdialog('open');
 		}
 	});
-
-	$('.cms form#Form_ItemEditForm .cms-panel-link[data-confirm]').entwine({
-		onclick: function (e) {
-			if(!window.confirm(this.data('confirm'))) {
-				return false;
-			}
-			this._super(e);
-		}
-	})	
 });
 })(jQuery);
